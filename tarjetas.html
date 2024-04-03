@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/princ.css">
+
+        <!-- JS -->
+        <script src="./js/tarjeta.js"></script>
+        
+        <title>LUAL Desarrollos - Sucursales </title>
+
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> 
+            <img src="./img/inicio/logo4.png" alt="" width="30" height="30" style="border-radius: 50%;">
+            <span>LUAL Desarrollos - Sucursales</span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+            <div class="d-flex">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link" href="stock.html">Stock</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" href="tarjetas.html">Tarjetas</a>
+                    </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="clientes.html">Clientes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="configuracion.html" id="navbarDropdown" role="button" aria-expanded="false">
+                        Configuración
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Datos de la empresa</a></li>
+                        <li><a class="dropdown-item" href="#">Configuración Visual</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Versión actual</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <img src="./img/inicio/cara.jpg" style="border-radius: 50%;margin-left: 20px;" alt="" width="40" height="40">
+                    </li>
+                    <li class="nav-item">
+                      <p class="text-white" style="margin-left: 8px; margin-right: 8px; margin-top: 6px;">Juan Pérez</p>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="btn btn-light">Salir</button>
+                    </li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+  <div id="titulo" class="container-fluid">
+      <h5 class="display-6 fw-bold text-muted fst-italic">Tarjetas:</h5> 
+  </div>
+
+
+    <div id="cuerpo_tarjeta" class="container-fluid mt-5">
+      <div class="row justify-content-evenly">
+        <div class="col-sm-3">
+          <h5 class="fw-bold text-muted fst-italic mb-5 text-center">Valores a calcular</h5>
+          <div class="mb-3 row">
+            <label for="inputValor" class="col-sm-6 col-form-label">Valor Unitario</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="valor" placeholder="Ingresar valor">
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="inputCantidad" class="col-sm-6 col-form-label">Cantidad</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="cantidad" placeholder="Ingresar cant.">
+            </div>
+          </div>
+
+
+          <div class="mb-3 row">
+            <label for="inputTotal" class="col-sm-6 col-form-label">Total a financiar</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor total"  disabled readonly>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-sm-3">
+          <h5 class="fw-bold text-muted fst-italic mb-4 text-center">Tarjetas Nacionales</h5>
+          <img src="./img/tarjetas/visa2.png" alt="" width="70">
+
+
+          <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
+            <option selected>Elegir Cantidad de Cuotas</option>
+            <option value="1">1 cuota c/interés</option>
+            <option value="2">3 cuotas c/interés</option>
+            <option value="3">6 cuotas c/interés</option>
+          </select>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+            </div>
+          </div>
+
+
+          <img src="./img/tarjetas/master.png" alt="" width="70" class="mt-2">
+
+
+          <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
+            <option selected>Elegir Cantidad de Cuotas</option>
+            <option value="1">1 cuota c/interés</option>
+            <option value="2">3 cuotas c/interés</option>
+            <option value="3">6 cuotas c/interés</option>
+          </select>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <h5 class="fw-bold text-muted fst-italic mb-4 text-center">Tarjeta Provincial</h5>
+          <img src="./img/tarjetas/data2.png" alt="" width="80">
+
+
+          <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
+            <option selected>Elegir Cantidad de Cuotas</option>
+            <option value="1">1 cuota c/interés</option>
+            <option value="2">3 cuotas c/interés</option>
+            <option value="3">6 cuotas c/interés</option>
+          </select>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+            </div>
+          </div>
+
+
+          <img src="./img/tarjetas/nar.png" alt="" width="75" class="mt-2">
+
+
+          <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
+            <option selected>Elegir Cantidad de Cuotas</option>
+            <option value="1">1 cuota c/interés</option>
+            <option value="2">3 cuotas c/interés</option>
+            <option value="3">6 cuotas c/interés</option>
+          </select>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <h5 class="fw-bold text-muted fst-italic mb-4 text-center">Financiación propia</h5>
+          <img src="./img/tarjetas/americanexpress.png" alt="" width="70">
+
+
+          <select id="tarj_propia" class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
+            <option selected>Elegir Cantidad de Cuotas</option>
+            <option value="1">1 cuota c/interés</option>
+            <option value="2">3 cuotas c/interés</option>
+            <option value="3">6 cuotas c/interés</option>
+          </select>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
+            <div class="col-sm-4">
+              <input id="inputValorCuotaPropia" type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
+            <div class="col-sm-4">
+              <input id="inputValorInteresPorcPropia" type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
+            <div class="col-sm-4">
+              <input id="inputValorInteresMontoPropia" type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
+            <div class="col-sm-4">
+              <input id="inputValorFinal" type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+  <!-- Footer fijo -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 LUAL Desarrollos</p>
+    </div>
+  </footer>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

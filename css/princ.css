@@ -1,0 +1,49 @@
+body {
+    caret-color: transparent; /* Oculta el cursor de texto */
+}
+
+/* Estilos adicionales para el footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+}
+
+/* Estilos base para la imagen */
+#imagen-princ {
+    width: 100%; /* Porcentaje para que la imagen sea responsive */
+}
+
+/* Media query para dispositivos móviles (hasta 575.98px) */
+@media (max-width: 575.98px) {
+    #imagen-princ {
+        width: 100%; /* Ancho completo en dispositivos móviles */
+    }
+}
+
+/* Media query para tablets (desde 576px hasta 991.98px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    #imagen-princ {
+        width: 80%; /* Ancho del 80% en tablets */
+    }
+}
+
+/* Media query para monitores (desde 992px hasta 1199.98px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    #imagen-princ {
+        width: 60%; /* Ancho del 60% en monitores */
+        margin-top: 150px;
+    }
+}
+
+/* Media query para pantallas más grandes (a partir de 1200px) */
+@media (min-width: 1200px) {
+    #imagen-princ {
+        width: 50%; /* Ancho del 50% en pantallas más grandes */
+        padding-top: 200px;
+    }
+}
