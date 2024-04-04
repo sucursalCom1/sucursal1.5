@@ -18,7 +18,8 @@
 
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"> 
             <img src="./img/inicio/logo4.png" alt="" width="30" height="30" style="border-radius: 50%;">
@@ -66,7 +67,7 @@
             </div>
           </div>
         </div>
-      </nav>
+  </nav>
 
 
   <div id="titulo" class="container-fluid">
@@ -74,238 +75,261 @@
   </div>
 
 
-    <div id="cuerpo_tarjeta" class="container-fluid mt-5">
-      <div class="row justify-content-evenly">
-        <div class="col-sm-3">
-          <h5 class="fw-bold text-muted fst-italic mb-5 text-center">Valores a calcular</h5>
-          <div class="mb-3 row">
-            <label for="inputValor" class="col-sm-6 col-form-label">Valor Unitario</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="valor" placeholder="Ingresar valor">
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card h-100">
+              <div class="card-header">
+                <h5 class="fw-bold text-muted fst-italic text-center">Valores a calcular</h5>
+              </div>
+                <div class="card-body">
+                    <div class="mb-3 row">
+                        <label for="inputValor" class="col-sm-6 col-form-label">Valor Unitario</label>
+                        <div class="col-sm-4">
+                        <input type="text" class="form-control" id="valor" placeholder="Ingresar valor">
+                        </div>
+                    </div>
+                
+                    <div class="mb-3 row">
+                        <label for="inputCantidad" class="col-sm-6 col-form-label">Cantidad</label>
+                        <div class="col-sm-4">
+                        <input type="text" class="form-control" id="cantidad" placeholder="Ingresar cant.">
+                        </div>
+                    </div>
+                
+                    <div class="mb-3 row">
+                        <label for="inputTotal" class="col-sm-6 col-form-label">Total a financiar</label>
+                        <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor total"  disabled readonly>
+                        </div>
+                    </div>
+              </div>
             </div>
-          </div>
-
-          <div class="mb-3 row">
-            <label for="inputCantidad" class="col-sm-6 col-form-label">Cantidad</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="cantidad" placeholder="Ingresar cant.">
+        </div>        
+        
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="fw-bold text-muted fst-italic text-center">Tarjetas Nacionales</h5>
             </div>
-          </div>
-
-
-          <div class="mb-3 row">
-            <label for="inputTotal" class="col-sm-6 col-form-label">Total a financiar</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor total"  disabled readonly>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-sm-3">
-          <h5 class="fw-bold text-muted fst-italic mb-4 text-center">Tarjetas Nacionales</h5>
-          <img src="./img/tarjetas/visa2.png" alt="" width="70">
-
-
-          <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
-            <option selected>Elegir Cantidad de Cuotas</option>
-            <option value="1">1 cuota c/interés</option>
-            <option value="2">3 cuotas c/interés</option>
-            <option value="3">6 cuotas c/interés</option>
-          </select>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
-            </div>
-          </div>
+            <div class="card-body">
+                    
+                    <img src="./img/tarjetas/visa2.png" alt="" width="70">
           
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
-            </div>
-          </div>
-
-
-          <img src="./img/tarjetas/master.png" alt="" width="70" class="mt-2">
-
-
-          <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
-            <option selected>Elegir Cantidad de Cuotas</option>
-            <option value="1">1 cuota c/interés</option>
-            <option value="2">3 cuotas c/interés</option>
-            <option value="3">6 cuotas c/interés</option>
-          </select>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
-            </div>
-          </div>
           
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-3">
-          <h5 class="fw-bold text-muted fst-italic mb-4 text-center">Tarjeta Provincial</h5>
-          <img src="./img/tarjetas/data2.png" alt="" width="80">
-
-
-          <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
-            <option selected>Elegir Cantidad de Cuotas</option>
-            <option value="1">1 cuota c/interés</option>
-            <option value="2">3 cuotas c/interés</option>
-            <option value="3">6 cuotas c/interés</option>
-          </select>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
-            </div>
-          </div>
+                    <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
+                      <option selected>Elegir Cantidad de Cuotas</option>
+                      <option value="1">1 cuota c/interés</option>
+                      <option value="2">3 cuotas c/interés</option>
+                      <option value="3">6 cuotas c/interés</option>
+                    </select>
           
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
-            </div>
-          </div>
-
-
-          <img src="./img/tarjetas/nar.png" alt="" width="75" class="mt-2">
-
-
-          <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
-            <option selected>Elegir Cantidad de Cuotas</option>
-            <option value="1">1 cuota c/interés</option>
-            <option value="2">3 cuotas c/interés</option>
-            <option value="3">6 cuotas c/interés</option>
-          </select>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
-            </div>
-          </div>
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+                      </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
+                      </div>
+                    </div>
           
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
-            </div>
-          </div>
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
+                      </div>
+                    </div>
+          
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+                      </div>
+                    </div>
+          
+          
+                    <img src="./img/tarjetas/master.png" alt="" width="70" class="mt-2">
+          
+          
+                    <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
+                      <option selected>Elegir Cantidad de Cuotas</option>
+                      <option value="1">1 cuota c/interés</option>
+                      <option value="2">3 cuotas c/interés</option>
+                      <option value="3">6 cuotas c/interés</option>
+                    </select>
+          
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+                      </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
+                      </div>
+                    </div>
+          
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
+                      </div>
+                    </div>
+          
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+                      </div>
+                    </div>
 
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
             </div>
           </div>
         </div>
 
-        <div class="col-sm-3">
-          <h5 class="fw-bold text-muted fst-italic mb-4 text-center">Financiación propia</h5>
-          <img src="./img/tarjetas/americanexpress.png" alt="" width="70">
-
-
-          <select id="tarj_propia" class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
-            <option selected>Elegir Cantidad de Cuotas</option>
-            <option value="1">1 cuota c/interés</option>
-            <option value="2">3 cuotas c/interés</option>
-            <option value="3">6 cuotas c/interés</option>
-          </select>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
-            <div class="col-sm-4">
-              <input id="inputValorCuotaPropia" type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="fw-bold text-muted fst-italic text-center">Tarjeta Provincial</h5>
             </div>
-          </div>
+            <div class="card-body">
+                    <img src="./img/tarjetas/data2.png" alt="" width="80">
           
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
-            <div class="col-sm-4">
-              <input id="inputValorInteresPorcPropia" type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
-            <div class="col-sm-4">
-              <input id="inputValorInteresMontoPropia" type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
-            <div class="col-sm-4">
-              <input id="inputValorFinal" type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+          
+                    <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
+                      <option selected>Elegir Cantidad de Cuotas</option>
+                      <option value="1">1 cuota c/interés</option>
+                      <option value="2">3 cuotas c/interés</option>
+                      <option value="3">6 cuotas c/interés</option>
+                    </select>
+          
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+                      </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
+                      </div>
+                    </div>
+          
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
+                      </div>
+                    </div>
+          
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+                      </div>
+                    </div>
+          
+          
+                    <img src="./img/tarjetas/nar.png" alt="" width="75" class="mt-2">
+          
+          
+                    <select class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
+                      <option selected>Elegir Cantidad de Cuotas</option>
+                      <option value="1">1 cuota c/interés</option>
+                      <option value="2">3 cuotas c/interés</option>
+                      <option value="3">6 cuotas c/interés</option>
+                    </select>
+          
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+                      </div>
+                    </div>
+                    
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
+                      </div>
+                    </div>
+          
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
+                      </div>
+                    </div>
+          
+                    <div class="row mb-3">
+                      <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+                      </div>
+                    </div>
             </div>
           </div>
         </div>
 
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-header">
+              <h5 class="fw-bold text-muted fst-italic text-center">Financiación propia</h5>
+            </div>
+            <div class="card-body">
+                <img src="./img/tarjetas/americanexpress.png" alt="" width="70">
 
-      </div>
+
+                <select id="tarj_propia" class="form-select form-select-lg mb-3 mt-2" aria-label=".form-select-lg example">
+                    <option selected>Elegir Cantidad de Cuotas</option>
+                    <option value="1">1 cuota c/interés</option>
+                    <option value="2">3 cuotas c/interés</option>
+                    <option value="3">6 cuotas c/interés</option>
+                </select>
+
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Cuota</label>
+                    <div class="col-sm-4">
+                    <input id="inputValorCuotaPropia" type="text" class="form-control" id="colFormLabel" placeholder="Valor cuota" disabled readonly>
+                    </div>
+                </div>
+                
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-4 col-form-label">Interés %</label>
+                    <div class="col-sm-4">
+                    <input id="inputValorInteresPorcPropia" type="text" class="form-control" id="colFormLabel" placeholder="Valor interés %" disabled readonly>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-4 col-form-label">Interés $</label>
+                    <div class="col-sm-4">
+                    <input id="inputValorInteresMontoPropia" type="text" class="form-control" id="colFormLabel" placeholder="Valor interés $" disabled readonly>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-4 col-form-label">Valor Final</label>
+                    <div class="col-sm-4">
+                    <input id="inputValorFinal" type="text" class="form-control" id="colFormLabel" placeholder="Valor final" disabled readonly>
+                    </div>
+                </div>
+
+            </div>
+          </div>
+        </div>
     </div>
+  </div>
 
 
 
